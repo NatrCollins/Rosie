@@ -1,0 +1,161 @@
+   html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+   }
+   
+   * {
+    box-sizing: border-box;
+    font-family: 'Quicksand', monospace;
+  }
+  
+  
+  body {
+    padding: 4rem 6rem;
+  }
+  
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    margin-bottom: 2rem;
+  }
+  
+  .label {
+    grid-column: span 3;
+    /* border-top: 2px solid #424242; */
+    margin-right: .5rem;
+  }
+  
+  .primary, .priority, .secondary, .font {
+    grid-column: span 9;
+    /* border-top: 2px solid #424242; */
+    
+  }
+  button{
+    margin-top:1rem;
+    font: 'Lucinda-grande';
+  }
+  
+  
+  .primary button {
+    height: 50px;
+    padding: 0;
+    width: 318px;
+    border-radius: 22px;
+    border: none;
+    background-color: #FEC3CC;
+    box-shadow: 0px 3px 4px #F49996;
+    color: white;
+    font-size: 30px;  
+    transition: 300ms;
+  }
+
+  .secondary button {
+    height: 50px;
+    padding: 0;
+    width: 318px;
+    border-radius: 22px;
+    border: 1px solid#FEC3CC;
+    background-color: #ffffff ;
+    box-shadow: 0px 3px 4px #F49996;
+    color: #FEC3CC;
+    font-size: 30px;  
+    transition: 300ms;
+  }
+  .priority button{
+    height: 85px;
+    padding: 0;
+    width: 318px;
+    border-radius: 22px;
+    border: none;
+    background-color: #E60D32;
+    box-shadow: 0px 3px 4px #980B0C;
+    color: white;
+    font-size: 30px;  
+    transition: 300ms;
+  }
+  
+ .specimen .btn-selected{
+    border: 2px solid#424242;
+  }
+
+  button:hover, .btn-hover {
+    background-color: #455F93;
+    color: white;
+  }
+  button:active{
+    border: 2px solid#424242;
+  }
+
+  .font h1, h3, p {
+    color: #455F93;
+  }
+  .eep1, .watch{
+    color: #73A6D8;
+  }
+
+  .eep2{
+    color: #E60D32;
+  }
+
+  .btn{
+    background-color: #424242;
+    max-width: 360px;
+    color: white;
+  }
+
+  .circle{
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .bg-primary{
+    background-color: #FEC3CC;
+  }
+
+  .bg-primary-accent{
+    background-color: #E60D32;
+  }
+
+  .bg-primary-variant{
+    background-color: #F49996;
+  }
+
+  .bg-secondary{
+    background-color: #455F93;
+  }
+
+  .bg-secondary-variant{
+    background-color: #73A6D8;
+  }
+
+  .icons *{
+    max-width: 260px;
+    max-height: 260px;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 960px) {
+    button {
+      width: 100%;
+    }
+    .label, .buttons {
+      grid-column: span 12;
+    }
+    .primary, .priority {
+      border: none;
+    }
+  }
